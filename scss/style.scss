@@ -57,14 +57,59 @@ h6 {font: 16px sans-serif;}
 /*Переменные*/
     /*цвета*/
         $g1: #484c55; /*ссылки Header*/
-        $b1: #49cbcd; /*ссылки Header(hover)*/
+        $b1: #49cbcd; /*ссылки Header(hover), buy now (2)*/
         $g2: #f8f9fb; /*li:hover(header)*/
+        $g3: #788492; /*buy now*/
 /*Миксины*/
     /*header*/
         @mixin li_a {
 	        padding: 0 30px;
             cursor: pointer;
             height: 100px;
+        }
+    /*service*/
+        @mixin account{
+            display: block;
+            ul{border: 1px solid #ecf0f1;}
+            li{
+                width: 368px;
+                height: 45px;
+                border-bottom: 1px solid #ecf0f1;
+                background: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                color: #8c9299;
+                line-height: 45px;
+                span{
+                    border-radius: 3px;
+                    padding: 12px 49px;
+                    cursor: pointer;
+                }
+            }
+            li:first-child{
+                height: 75px;
+                border-bottom: none;
+                line-height: 75px;
+                font-size: 26px;
+                color: #fff;
+            }
+            li:nth-child(2){
+                height: 68px;
+                background: #f8f9fb;
+                line-height: 68px;
+                font-size: 20px;
+                color: #485460;
+            }
+            li:last-child{
+                height: 98px;
+                border-bottom: none;
+                background: #f8f9fb;
+                line-height: 98px;
+                font-size: 17px;
+                color: #fff;
+                font-weight: 900;
+            }
         }
 
 /**************************************************/
@@ -78,6 +123,8 @@ h6 {font: 16px sans-serif;}
         width: 90%;
         height: 100px;
         padding: 0 5%;
+        z-index: 2000;
+        background: #fff;
         .logo{
             display: block;
             width: 120px;
@@ -118,6 +165,43 @@ h6 {font: 16px sans-serif;}
                     height: 97px;
                     border-bottom: 3px solid $b1;
                     .c2{color: $b1;}
+                }
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        .service{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            .basic{
+                @include account;
+                li span{
+                    background: $g3;
+                }
+                li:first-child{
+                    background: $g3;
+                }
+            }
+            .pro{
+                @include account;
+                li span{
+                    background: $b1;
+                }
+                li:first-child{
+                    background: $b1;
+                }
+            }
+            .premium{
+                @include account;
+                li span{
+                    background: $g3;
+                }
+                li:first-child{
+                    background: $g3;
                 }
             }
         }

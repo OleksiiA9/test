@@ -87,10 +87,12 @@ h6 {
 /*╨Я╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡*/
 /*╤Ж╨▓╨╡╤В╨░*/
 /*╤Б╤Б╤Л╨╗╨║╨╕ Header*/
-/*╤Б╤Б╤Л╨╗╨║╨╕ Header(hover)*/
+/*╤Б╤Б╤Л╨╗╨║╨╕ Header(hover), buy now (2)*/
 /*li:hover(header)*/
+/*buy now*/
 /*╨Ь╨╕╨║╤Б╨╕╨╜╤Л*/
 /*header*/
+/*service*/
 /**************************************************/
 .wrapper {
   position: relative;
@@ -101,7 +103,9 @@ h6 {
     position: fixed;
     width: 90%;
     height: 100px;
-    padding: 0 5%; }
+    padding: 0 5%;
+    z-index: 2000;
+    background: #fff; }
     .wrapper .header .logo {
       display: block;
       width: 120px;
@@ -142,5 +146,139 @@ h6 {
           border-bottom: 3px solid #49cbcd; }
           .wrapper .header .top_nav ul .c1:hover .c2 {
             color: #49cbcd; }
+  .wrapper .content {
+    position: absolute;
+    top: 100px;
+    width: 100%; }
+    .wrapper .content .service {
+      display: flex;
+      justify-content: space-around;
+      text-align: center; }
+      .wrapper .content .service .basic {
+        display: block; }
+        .wrapper .content .service .basic ul {
+          border: 1px solid #ecf0f1; }
+        .wrapper .content .service .basic li {
+          width: 368px;
+          height: 45px;
+          border-bottom: 1px solid #ecf0f1;
+          background: #fff;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          color: #8c9299;
+          line-height: 45px; }
+          .wrapper .content .service .basic li span {
+            border-radius: 3px;
+            padding: 12px 49px;
+            cursor: pointer; }
+        .wrapper .content .service .basic li:first-child {
+          height: 75px;
+          border-bottom: none;
+          line-height: 75px;
+          font-size: 26px;
+          color: #fff; }
+        .wrapper .content .service .basic li:nth-child(2) {
+          height: 68px;
+          background: #f8f9fb;
+          line-height: 68px;
+          font-size: 20px;
+          color: #485460; }
+        .wrapper .content .service .basic li:last-child {
+          height: 98px;
+          border-bottom: none;
+          background: #f8f9fb;
+          line-height: 98px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 900; }
+        .wrapper .content .service .basic li span {
+          background: #788492; }
+        .wrapper .content .service .basic li:first-child {
+          background: #788492; }
+      .wrapper .content .service .pro {
+        display: block; }
+        .wrapper .content .service .pro ul {
+          border: 1px solid #ecf0f1; }
+        .wrapper .content .service .pro li {
+          width: 368px;
+          height: 45px;
+          border-bottom: 1px solid #ecf0f1;
+          background: #fff;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          color: #8c9299;
+          line-height: 45px; }
+          .wrapper .content .service .pro li span {
+            border-radius: 3px;
+            padding: 12px 49px;
+            cursor: pointer; }
+        .wrapper .content .service .pro li:first-child {
+          height: 75px;
+          border-bottom: none;
+          line-height: 75px;
+          font-size: 26px;
+          color: #fff; }
+        .wrapper .content .service .pro li:nth-child(2) {
+          height: 68px;
+          background: #f8f9fb;
+          line-height: 68px;
+          font-size: 20px;
+          color: #485460; }
+        .wrapper .content .service .pro li:last-child {
+          height: 98px;
+          border-bottom: none;
+          background: #f8f9fb;
+          line-height: 98px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 900; }
+        .wrapper .content .service .pro li span {
+          background: #49cbcd; }
+        .wrapper .content .service .pro li:first-child {
+          background: #49cbcd; }
+      .wrapper .content .service .premium {
+        display: block; }
+        .wrapper .content .service .premium ul {
+          border: 1px solid #ecf0f1; }
+        .wrapper .content .service .premium li {
+          width: 368px;
+          height: 45px;
+          border-bottom: 1px solid #ecf0f1;
+          background: #fff;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          color: #8c9299;
+          line-height: 45px; }
+          .wrapper .content .service .premium li span {
+            border-radius: 3px;
+            padding: 12px 49px;
+            cursor: pointer; }
+        .wrapper .content .service .premium li:first-child {
+          height: 75px;
+          border-bottom: none;
+          line-height: 75px;
+          font-size: 26px;
+          color: #fff; }
+        .wrapper .content .service .premium li:nth-child(2) {
+          height: 68px;
+          background: #f8f9fb;
+          line-height: 68px;
+          font-size: 20px;
+          color: #485460; }
+        .wrapper .content .service .premium li:last-child {
+          height: 98px;
+          border-bottom: none;
+          background: #f8f9fb;
+          line-height: 98px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 900; }
+        .wrapper .content .service .premium li span {
+          background: #788492; }
+        .wrapper .content .service .premium li:first-child {
+          background: #788492; }
 
 /*# sourceMappingURL=style.css.map */
