@@ -90,9 +90,11 @@ h6 {
 /*╤Б╤Б╤Л╨╗╨║╨╕ Header(hover), buy now (2)*/
 /*li:hover(header)*/
 /*buy now*/
+/*╤И╤А╨╕╤Д╤В╤Л*/
 /*╨Ь╨╕╨║╤Б╨╕╨╜╤Л*/
 /*header*/
 /*service*/
+/*bott_form*/
 /**************************************************/
 .wrapper {
   position: relative;
@@ -132,7 +134,7 @@ h6 {
           cursor: pointer;
           height: 100px; }
           .wrapper .header .top_nav ul .c1 .c2 {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 15px;
             font-weight: 'regular';
             color: #484c55;
@@ -153,7 +155,13 @@ h6 {
     .wrapper .content .service {
       display: flex;
       justify-content: space-around;
-      text-align: center; }
+      text-align: center;
+      background: #f1f1f1;
+      padding: 120px 0 100px 0;
+      /*service*/
+      /*basic*/
+      /*pro*/
+      /*premium*/ }
       .wrapper .content .service .basic {
         display: block; }
         .wrapper .content .service .basic ul {
@@ -163,7 +171,7 @@ h6 {
           height: 45px;
           border-bottom: 1px solid #ecf0f1;
           background: #fff;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 14px;
           font-weight: 400;
           color: #8c9299;
@@ -205,7 +213,7 @@ h6 {
           height: 45px;
           border-bottom: 1px solid #ecf0f1;
           background: #fff;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 14px;
           font-weight: 400;
           color: #8c9299;
@@ -247,7 +255,7 @@ h6 {
           height: 45px;
           border-bottom: 1px solid #ecf0f1;
           background: #fff;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 14px;
           font-weight: 400;
           color: #8c9299;
@@ -280,5 +288,118 @@ h6 {
           background: #788492; }
         .wrapper .content .service .premium li:first-child {
           background: #788492; }
+      .wrapper .content .service #c3 {
+        background: #485460; }
+      .wrapper .content .service #c3:hover {
+        background: #366593; }
+      .wrapper .content .service #c4 {
+        background: #788492; }
+      .wrapper .content .service #c4:hover {
+        background: #366593; }
+      .wrapper .content .service #c5 {
+        background: #49cbcd; }
+      .wrapper .content .service #c5:hover {
+        background: #366593; }
+      .wrapper .content .service #c6 {
+        background: #49cbcd; }
+      .wrapper .content .service #c6:hover {
+        background: #366593; }
+      .wrapper .content .service #c7 {
+        background: #485460; }
+      .wrapper .content .service #c7:hover {
+        background: #366593; }
+      .wrapper .content .service #c8 {
+        background: #788492; }
+      .wrapper .content .service #c8:hover {
+        background: #366593; }
+    .wrapper .content .contact {
+      background: url(../images/bott_banner.png);
+      padding: 100px 0 70px 0;
+      text-align: center; }
+      .wrapper .content .contact h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 42px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 120px; }
+      .wrapper .content .contact .bott_cont {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around; }
+        .wrapper .content .contact .bott_cont .left {
+          width: 45%;
+          padding-right: 4%;
+          text-align: left; }
+          .wrapper .content .contact .bott_cont .left h3 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 10px; }
+          .wrapper .content .contact .bott_cont .left p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #adadad; }
+          .wrapper .content .contact .bott_cont .left .social_networks ul {
+            display: block;
+            padding: 40px 0 20px 0; }
+            .wrapper .content .contact .bott_cont .left .social_networks ul li {
+              display: inline-block;
+              overflow: hidden;
+              margin-right: 16px;
+              opacity: 0.7;
+              width: 42px;
+              height: 42px;
+              border-radius: 50%; }
+            .wrapper .content .contact .bott_cont .left .social_networks ul li:hover {
+              opacity: 1; }
+          .wrapper .content .contact .bott_cont .left .info h5 {
+            color: #bface2;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 12px; }
+        .wrapper .content .contact .bott_cont .right {
+          width: 45%;
+          padding-left: 4%; }
+          .wrapper .content .contact .bott_cont .right form .nE {
+            display: flex;
+            justify-content: space-between; }
+            .wrapper .content .contact .bott_cont .right form .nE input {
+              width: 46%;
+              height: auto;
+              padding: 16px 10px;
+              color: #c1c1c1;
+              font-family: "Open Sans", sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              border-radius: 3px;
+              border: none; }
+          .wrapper .content .contact .bott_cont .right form textarea {
+            display: block;
+            width: 100%;
+            padding: 16px 10px;
+            color: #c1c1c1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 3px;
+            border: none;
+            margin: 30px 0;
+            height: 176px; }
+          .wrapper .content .contact .bott_cont .right form .top_sub {
+            float: right;
+            width: 170px;
+            background: #49cbcd;
+            border: none;
+            border-radius: 3px;
+            padding: 8px 0 14px 0;
+            text-align: center;
+            color: #fff;
+            font-family: "Open Sans", sans-serif;
+            font-size: 22px;
+            font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

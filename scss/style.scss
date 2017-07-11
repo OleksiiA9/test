@@ -60,6 +60,8 @@ h6 {font: 16px sans-serif;}
         $b1: #49cbcd; /*ссылки Header(hover), buy now (2)*/
         $g2: #f8f9fb; /*li:hover(header)*/
         $g3: #788492; /*buy now*/
+    /*шрифты*/
+        $OpenSans: 'Open Sans', sans-serif;
 /*Миксины*/
     /*header*/
         @mixin li_a {
@@ -76,7 +78,7 @@ h6 {font: 16px sans-serif;}
                 height: 45px;
                 border-bottom: 1px solid #ecf0f1;
                 background: #fff;
-                font-family: 'Open Sans', sans-serif;
+                font-family: $OpenSans;
                 font-size: 14px;
                 font-weight: 400;
                 color: #8c9299;
@@ -111,7 +113,16 @@ h6 {font: 16px sans-serif;}
                 font-weight: 900;
             }
         }
-
+    /*bott_form*/
+            @mixin bott_form{ 
+                padding: 16px 10px;
+                color: #c1c1c1;
+                font-family: $OpenSans;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 3px;
+                border: none;
+            }
 /**************************************************/
 .wrapper{
     position: relative;
@@ -152,7 +163,7 @@ h6 {font: 16px sans-serif;}
                 .c1{
                     @include li_a;
                     .c2{
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: $OpenSans;
                         font-size: 15px;
                         font-weight: 'regular';
                         color: $g1;
@@ -177,6 +188,8 @@ h6 {font: 16px sans-serif;}
             display: flex;
             justify-content: space-around;
             text-align: center;
+            background: #f1f1f1;
+            padding: 120px 0 100px 0;
             .basic{
                 @include account;
                 li span{
@@ -202,6 +215,143 @@ h6 {font: 16px sans-serif;}
                 }
                 li:first-child{
                     background: $g3;
+                }
+            }
+            /*service*/
+            /*basic*/
+            #c3{
+                background: #485460;
+            }
+            #c3:hover{
+                background: #366593;
+            }
+            #c4{
+                background: #788492;
+            }
+            #c4:hover{
+                background: #366593;
+            }
+            /*pro*/
+            #c5{
+                background: $b1;
+            }
+            #c5:hover{
+                background: #366593;
+            }
+            #c6{
+                background: $b1;
+            }
+            #c6:hover{
+                background: #366593;
+            }
+            /*premium*/
+            #c7{
+                background: #485460;
+            }
+            #c7:hover{
+                background: #366593;
+            }
+            #c8{
+                background: #788492;
+            }
+            #c8:hover{
+                background: #366593;
+            }   
+        }
+        .contact{
+            background: url(../images/bott_banner.png);
+            padding: 100px 0 70px 0;
+            text-align: center;
+            h2{
+                font-family: $OpenSans;
+                font-size: 42px;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 120px;
+            }
+            .bott_cont{
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                .left{
+                    width: 45%;
+                    padding-right: 4%;
+                    text-align: left;
+                    h3{
+                        font-family: $OpenSans;
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: #fff;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-family: $OpenSans;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #adadad;
+                    }
+                    .social_networks{
+                        ul{display: block;
+                            padding: 40px 0 20px 0;
+                            li{
+                                display: inline-block;
+                                overflow: hidden;
+                                margin-right: 16px;
+                                opacity: 0.7;
+                                width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                            }
+                            li:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .info{
+                        h5{
+                            color: #bface2;
+                            font-family: $OpenSans;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+                .right{
+                    width: 45%;
+                    padding-left: 4%;
+                    form{
+                        .nE{
+                            display: flex;
+                            justify-content: space-between;
+                            input{
+                                width: 46%;
+                                height: auto;
+                                @include bott_form;
+                            }
+                        }
+                        textarea{
+                            display: block;
+                            width: 100%;
+                            @include bott_form;
+                            margin: 30px 0;
+                            height: 176px;
+                        }
+                        .top_sub{
+                            float: right;
+                            width: 170px;
+                            background: $b1;
+                            border: none;
+                            border-radius: 3px;
+                            padding: 8px 0 14px 0;
+                            text-align: center;
+                            color: #fff;
+                            font-family: $OpenSans;
+                            font-size: 22px;
+                            font-weight: 400;
+                        }
+                    } 
                 }
             }
         }
