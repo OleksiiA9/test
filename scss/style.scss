@@ -184,6 +184,16 @@ h6 {font: 16px sans-serif;}
         position: absolute;
         top: 100px;
         width: 100%;
+        .team{
+            text-align: center;
+            padding: 110px 0;
+            h2{
+                color: #4e525d;
+                font-family: $OpenSans;
+                font-size: 42px;
+                font-weight: 400;
+            }
+        }
         .service{
             display: flex;
             justify-content: space-around;
@@ -315,6 +325,9 @@ h6 {font: 16px sans-serif;}
                             font-size: 14px;
                             font-weight: 400;
                             margin-bottom: 12px;
+                            a{
+                               color: #bface2; 
+                            }
                         }
                     }
                 }

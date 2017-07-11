@@ -15,7 +15,4 @@ $(document).ready(function(){
 $(document).ready(function(){    
         c7.onmouseover = function(){c8.style.backgroundColor = '#366593'};
         c7.onmouseout = function(){c8.style.backgroundColor = '#485460'};
-}); 
-
-
-
+});

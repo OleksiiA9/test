@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -27,9 +27,10 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 51px;
+    height: 51px;
     padding: 0;
+    border-radius: 50%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -40,6 +41,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 1001;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -79,7 +81,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 25px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,7 +90,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../images/prev.png);
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -97,7 +99,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 25px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,7 +108,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../images/next.png);
 }
 [dir='rtl'] .slick-next:before
 {

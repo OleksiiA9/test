@@ -24,7 +24,7 @@ $(document).ready(function(){
       //infinite: false,//
       //edgeFriction: '0.5',//
       //пауза при наведении на слайд//
-      pauseOnDotsHover: true,
+      //pauseOnDotsHover: true,
       //способ загрузки картинок, по умолчанию 'ondemand' -  сначало картинка прогружаеться потом идёт анимация, 'progressive' - //
       //lazyLoad: 'ondemand',//
       //направление слайдов, в html - сладеру нужно задать dir="rtl"//
@@ -41,28 +41,33 @@ $(document).ready(function(){
       slidesToScroll: 1,
       //zindex тоже что и в css z-index//
       zIndex: 1000,
-      //респонсив при ширине экрана 768px и 480px
-    responsive: [
-        {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            //centerMode: true,
-            //centerPadding: '40px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            }
-        },
-    {
-    breakpoint: 480,
-    settings: {
-        arrows: false,
-        //centerMode: true,
-        //centerPadding: '40px',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-            }
-        }
-    ]
+      //респонсив при ширине экрана 768px и 480px//
+     // responsive: [
+   // {
+    //  breakpoint: 768,
+   //   settings: {
+    //    arrows: false,
+    //    centerMode: true,
+    //    centerPadding: '40px',
+    //    slidesToShow: 2,
+    //    slidesToScroll: 2,
+    //  }
+  //  },
+  //  {
+   //   breakpoint: 480,
+   //   settings: {
+   //     arrows: false,
+    //    centerMode: true,
+   //     centerPadding: '40px',
+    //    slidesToShow: 1,
+    //    slidesToScroll: 1,
+   //   }
+  //  }
+//  ]
 });
-});     
+});
+$(document).ready(function(){
+$('.sl').slick({	
+    
+});
+});      
