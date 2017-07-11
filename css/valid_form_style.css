@@ -1,0 +1,133 @@
+#commentForm {
+		width: 500px;
+        position: relative;
+	}
+	#commentForm label {
+		width: 180px;
+        height: 40px;
+	}
+    #commentForm #cname-error {
+		width: 180px;
+        height: 40px;
+        position: absolute;
+        top: -60px;
+        background: #ebedec;
+        border-radius: 3px;
+        text-align: left;
+        vertical-align: 50px;
+        padding: 5px 10px;
+        color: #000;
+	}
+    #commentForm label:after {
+        content: ''; 
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20px; bottom: -20px; /* Положение треугольника */
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-top: 10px solid #ebedec; /* Добавляем треугольник */
+    }
+    #commentForm #cemail-error {
+		width: 180px;
+        height: 40px;
+        position: absolute;
+        top: -60px;
+        left: 266px;
+        background: #ebedec;
+        border-radius: 3px;
+        text-align: left;
+        vertical-align: 50px;
+        padding: 5px 10px;
+        color: #000;
+	}
+    #commentForm #cemail-error:after {
+        content: ''; 
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20px; bottom: -20px; /* Положение треугольника */
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-top: 10px solid #ebedec; /* Добавляем треугольник */
+    }
+    #commentForm #ccomment-error {
+		width: 180px;
+        height: 40px;
+        position: absolute;
+        top: 134px;
+        left: 14px;
+        background: #ebedec;
+        border-radius: 3px;
+        text-align: left;
+        vertical-align: 50px;
+        padding: 5px 10px;
+        color: #000;
+	}
+    #commentForm #ccomment-error:after {
+        content: ''; 
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20px; bottom: 50px; /* Положение треугольника */
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-bottom: 10px solid #ebedec; /* Добавляем треугольник */
+    }
+	#commentForm label.error, #commentForm input.submit {
+		width: 180px;
+        height: 40px;
+	}
+	#signupForm {
+		width: 670px;
+	}
+	#signupForm label.error {
+		margin-left: 10px;
+		width: auto;
+		display: inline;
+	}
+	#newsletter_topics label.error {
+		display: none;
+		margin-left: 103px;
+	}
+@media (min-width: 980px) and (max-width: 1200px) {
+    #commentForm {
+		width: 382px;
+    }
+    #commentForm #cemail-error {
+        left: 53%;
+        width: 180px;
+	}
+    #commentForm #cname-error {
+		width: 180px;
+	}
+    
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #commentForm {
+		width: 100%;
+    }
+    #commentForm input.submit {
+		width: 90px;
+        height: 26px;
+	}
+    #commentForm #ccomment-error {
+        top: 74px;
+	}
+    #commentForm #cemail-error {
+        left: 53%;
+        width: 120px;
+	}
+    #commentForm #cname-error {
+		width: 120px;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    #commentForm {
+		width: 90%;
+    }
+    #commentForm input.submit {
+		width: 90px;
+        height: 26px;
+	}
+    
+    #commentForm #ccomment-error {
+        top: 74px;
+	}
+    #commentForm #cemail-error {
+        left: 50%;
+	}
+}
+
+
