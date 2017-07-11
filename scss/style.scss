@@ -186,12 +186,13 @@ h6 {font: 16px sans-serif;}
         width: 100%;
         .team{
             text-align: center;
-            padding: 110px 0;
+            padding: 110px 0 50px 0;
             h2{
                 color: #4e525d;
                 font-family: $OpenSans;
                 font-size: 42px;
                 font-weight: 400;
+                margin-bottom: 140px;
             }
         }
         .service{
@@ -238,9 +239,6 @@ h6 {font: 16px sans-serif;}
             #c4{
                 background: #788492;
             }
-            #c4:hover{
-                background: #366593;
-            }
             /*pro*/
             #c5{
                 background: $b1;
@@ -251,9 +249,6 @@ h6 {font: 16px sans-serif;}
             #c6{
                 background: $b1;
             }
-            #c6:hover{
-                background: #366593;
-            }
             /*premium*/
             #c7{
                 background: #485460;
@@ -263,10 +258,7 @@ h6 {font: 16px sans-serif;}
             }
             #c8{
                 background: #788492;
-            }
-            #c8:hover{
-                background: #366593;
-            }   
+            } 
         }
         .contact{
             background: url(../images/bott_banner.png);

@@ -154,12 +154,13 @@ h6 {
     width: 100%; }
     .wrapper .content .team {
       text-align: center;
-      padding: 110px 0; }
+      padding: 110px 0 50px 0; }
       .wrapper .content .team h2 {
         color: #4e525d;
         font-family: "Open Sans", sans-serif;
         font-size: 42px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-bottom: 140px; }
     .wrapper .content .service {
       display: flex;
       justify-content: space-around;
@@ -302,24 +303,18 @@ h6 {
         background: #366593; }
       .wrapper .content .service #c4 {
         background: #788492; }
-      .wrapper .content .service #c4:hover {
-        background: #366593; }
       .wrapper .content .service #c5 {
         background: #49cbcd; }
       .wrapper .content .service #c5:hover {
         background: #366593; }
       .wrapper .content .service #c6 {
         background: #49cbcd; }
-      .wrapper .content .service #c6:hover {
-        background: #366593; }
       .wrapper .content .service #c7 {
         background: #485460; }
       .wrapper .content .service #c7:hover {
         background: #366593; }
       .wrapper .content .service #c8 {
         background: #788492; }
-      .wrapper .content .service #c8:hover {
-        background: #366593; }
     .wrapper .content .contact {
       background: url(../images/bott_banner.png);
       padding: 100px 0 70px 0;
