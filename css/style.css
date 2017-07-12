@@ -110,7 +110,8 @@ h6 {
     height: 100px;
     padding: 0;
     z-index: 2000;
-    background: #fff; }
+    background: #fff;
+    /*hamburger*/ }
     .wrapper .header .logo {
       display: block;
       width: 120px;
@@ -151,6 +152,18 @@ h6 {
           border-bottom: 3px solid #49cbcd; }
           .wrapper .header .top_nav ul .c1:hover .c2 {
             color: #49cbcd; }
+    .wrapper .header .menu {
+      float: right;
+      display: none;
+      width: 50px;
+      height: 50px;
+      background: blue; }
+    .wrapper .header .menu a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    .wrapper .header .content {
+      margin-top: 0 140px; }
   .wrapper .content {
     position: absolute;
     top: 100px;
@@ -323,7 +336,7 @@ h6 {
       .wrapper .content .service #c8 {
         background: #788492; }
     .wrapper .content .contact {
-      background: url(../images/bott_banner.png);
+      background: url(../images/bannerb6.png);
       padding: 100px 0 70px 0;
       text-align: center; }
       .wrapper .content .contact h2 {
@@ -414,5 +427,268 @@ h6 {
             font-size: 22px;
             font-weight: 400;
             cursor: pointer; }
+
+/***************************************************/
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  body {
+    background: red; }
+
+  .basic ul {
+    width: 100%; }
+
+  .basic ul li {
+    width: 30%; } }
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  body {
+    background: orange; }
+
+  .basic ul {
+    width: 100%; }
+
+  .basic ul li {
+    width: 30%; } }
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  body {
+    background: green; }
+
+  .basic ul {
+    width: 100%; }
+
+  .basic ul li {
+    width: 30%; } }
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  body {
+    background: blue; }
+
+  .basic ul {
+    width: 100%; }
+
+  .basic ul li {
+    width: 30%; } }
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  /*╤Б╤Б╤Л╨╗╨║╨╕ Header*/
+  /*li:hover(header)*/
+  /*service*/
+  .wrapper .wrapp2 {
+    width: 80%;
+    margin: 0 auto; }
+  .wrapper .header {
+    height: 50px;
+    /*hamburger*/ }
+    .wrapper .header .logo {
+      top: 6px; }
+    .wrapper .header .top_nav {
+      float: none;
+      display: none; }
+      .wrapper .header .top_nav ul li {
+        display: block; }
+    .wrapper .header .menu {
+      display: block;
+      width: 42px;
+      height: 21px;
+      position: absolute;
+      top: 16px;
+      right: 10%;
+      background: none;
+      cursor: pointer;
+      z-index: 10000; }
+    .wrapper .header .menu .hamburger {
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: #475a85;
+      margin-bottom: 4px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      cursor: pointer; }
+    .wrapper .header .menu .hamburger:last-child {
+      margin-bottom: 0; }
+    .wrapper .header .top_nav {
+      position: absolute;
+      display: none;
+      float: none;
+      top: 50px;
+      width: 100%;
+      padding: 0; }
+      .wrapper .header .top_nav ul {
+        display: block; }
+        .wrapper .header .top_nav ul .c1 {
+          padding: 0 20px;
+          cursor: pointer;
+          height: 20px;
+          line-height: 20px; }
+          .wrapper .header .top_nav ul .c1 .c2 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            font-weight: 'regular';
+            color: #484c55;
+            line-height: 20px; }
+        .wrapper .header .top_nav ul .c1:hover {
+          background: #f8f9fb;
+          padding: 0 20px;
+          cursor: pointer;
+          height: 20px;
+          line-height: 20px;
+          height: 17px;
+          border-bottom: 3px solid #49cbcd; }
+          .wrapper .header .top_nav ul .c1:hover .c2 {
+            color: #49cbcd; }
+    .wrapper .header .top_nav.active {
+      display: block;
+      width: 50%;
+      text-align: left;
+      background: #ebedec;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1000;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 0; }
+  .wrapper .content {
+    top: 50px; }
+    .wrapper .content .team {
+      padding: 10px 0 20px 0; }
+      .wrapper .content .team h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 0; }
+    .wrapper .content .service {
+      padding: 10px 0 10px 0; }
+      .wrapper .content .service .wrapp2 {
+        display: block;
+        width: 80%;
+        margin: 0 auto; }
+      .wrapper .content .service .basic {
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 6px; }
+        .wrapper .content .service .basic li {
+          width: 100%;
+          height: 20px;
+          line-height: 20px; }
+          .wrapper .content .service .basic li span {
+            border-radius: 3px;
+            padding: 4px 16px;
+            cursor: pointer; }
+        .wrapper .content .service .basic li:first-child {
+          height: 34px;
+          line-height: 34px; }
+        .wrapper .content .service .basic li:nth-child(2) {
+          height: 20px;
+          line-height: 20px; }
+        .wrapper .content .service .basic li:last-child {
+          height: 34px;
+          line-height: 34px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 600; }
+        .wrapper .content .service .basic li span {
+          background: #788492; }
+        .wrapper .content .service .basic li:first-child {
+          background: #788492; }
+      .wrapper .content .service .pro {
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 6px; }
+        .wrapper .content .service .pro li {
+          width: 100%;
+          height: 20px;
+          line-height: 20px; }
+          .wrapper .content .service .pro li span {
+            border-radius: 3px;
+            padding: 4px 16px;
+            cursor: pointer; }
+        .wrapper .content .service .pro li:first-child {
+          height: 34px;
+          line-height: 34px; }
+        .wrapper .content .service .pro li:nth-child(2) {
+          height: 20px;
+          line-height: 20px; }
+        .wrapper .content .service .pro li:last-child {
+          height: 34px;
+          line-height: 34px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 600; }
+        .wrapper .content .service .pro li span {
+          background: #49cbcd; }
+        .wrapper .content .service .pro li:first-child {
+          background: #49cbcd; }
+      .wrapper .content .service .premium {
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 6px; }
+        .wrapper .content .service .premium li {
+          width: 100%;
+          height: 20px;
+          line-height: 20px; }
+          .wrapper .content .service .premium li span {
+            border-radius: 3px;
+            padding: 4px 16px;
+            cursor: pointer; }
+        .wrapper .content .service .premium li:first-child {
+          height: 34px;
+          line-height: 34px; }
+        .wrapper .content .service .premium li:nth-child(2) {
+          height: 20px;
+          line-height: 20px; }
+        .wrapper .content .service .premium li:last-child {
+          height: 34px;
+          line-height: 34px;
+          font-size: 17px;
+          color: #fff;
+          font-weight: 600; }
+        .wrapper .content .service .premium li span {
+          background: #788492; }
+        .wrapper .content .service .premium li:first-child {
+          background: #788492; }
+    .wrapper .content .contact {
+      padding: 10px 0 140px 0;
+      position: relative; }
+      .wrapper .content .contact h2 {
+        font-size: 22px;
+        margin-bottom: 20px; }
+      .wrapper .content .contact .bott_cont {
+        width: 100%;
+        margin: 0 auto;
+        display: block; }
+        .wrapper .content .contact .bott_cont .left {
+          width: 100%;
+          padding-right: 0;
+          text-align: justify; }
+          .wrapper .content .contact .bott_cont .left h3 {
+            font-size: 20px; }
+          .wrapper .content .contact .bott_cont .left .social_networks ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0 20px 0; }
+          .wrapper .content .contact .bott_cont .left .info {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10px; }
+            .wrapper .content .contact .bott_cont .left .info h5 {
+              margin-bottom: 6px; }
+        .wrapper .content .contact .bott_cont .right {
+          width: 100%;
+          padding-left: 0; }
+          .wrapper .content .contact .bott_cont .right form .nE {
+            display: block; }
+            .wrapper .content .contact .bott_cont .right form .nE input {
+              width: 100%;
+              height: auto;
+              padding: 6px 10px;
+              display: block;
+              margin-bottom: 10px; }
+          .wrapper .content .contact .bott_cont .right form textarea {
+            display: block;
+            width: 100%;
+            padding: 6px 10px;
+            margin: 10px 0;
+            height: 126px; }
+          .wrapper .content .contact .bott_cont .right form .top_sub {
+            width: 30%;
+            padding: 4px 0 7px 0;
+            font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

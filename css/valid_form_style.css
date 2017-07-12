@@ -81,53 +81,41 @@
 		display: none;
 		margin-left: 103px;
 	}
-@media (min-width: 980px) and (max-width: 1200px) {
-    #commentForm {
-		width: 382px;
-    }
-    #commentForm #cemail-error {
-        left: 53%;
-        width: 180px;
-	}
-    #commentForm #cname-error {
-		width: 180px;
-	}
-    
-}
-@media (min-width: 768px) and (max-width: 979px) {
+@media screen and (min-width: 320px) and (max-width: 639px) {
     #commentForm {
 		width: 100%;
+	}
+     #commentForm #cname-error {
+        top: -56px;
+        left: 30%;
+        opacity: 0.9;
+        height: 38px;
+        width: 58%;
+	}
+    #commentForm #cname-error:after {
+        display: none;
     }
-    #commentForm input.submit {
-		width: 90px;
-        height: 26px;
-	}
-    #commentForm #ccomment-error {
-        top: 74px;
-	}
     #commentForm #cemail-error {
-        left: 53%;
-        width: 120px;
+        top: 20px;
+        left: 30%;
+        opacity: 0.9;
+        height: 38px;
+        width: 58%;
+        
 	}
-    #commentForm #cname-error {
-		width: 120px;
-	}
-}
-@media (min-width: 480px) and (max-width: 767px) {
-    #commentForm {
-		width: 90%;
+    #commentForm #cemail-error:after {
+        display: none;
     }
-    #commentForm input.submit {
-		width: 90px;
-        height: 26px;
-	}
-    
     #commentForm #ccomment-error {
-        top: 74px;
+		height: 38px;
+        width: 58%;
+        top: 114px;
+        left: 30%;
+        opacity: 0.7;
 	}
-    #commentForm #cemail-error {
-        left: 50%;
-	}
+    #commentForm #ccomment-error:after {
+        display: none;
+    }
 }
 
 

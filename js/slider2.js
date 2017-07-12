@@ -44,47 +44,57 @@ $(document).ready(function(){
       //респонсив при ширине экрана 768px и 480px//
 responsive: [
     {
+        breakpoint: 1920,
+            settings: {
+            arrows: false,
+            //centerMode: true,
+            //centerPadding: '40px',
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            }
+    },
+    {
+        breakpoint: 1440,
+            settings: {
+            arrows: false,
+            //centerMode: true,
+            //centerPadding: '40px',
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            }
+    },
+    {
         breakpoint: 1200,
             settings: {
             arrows: false,
             //centerMode: true,
             //centerPadding: '40px',
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             }
     },
     {
-        breakpoint: 980,
-            settings: {
-            arrows: false,
-            //centerMode: true,
-            //centerPadding: '40px',
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            }
-    },
-    {
-        breakpoint: 768,
+        breakpoint: 1024,
             settings: {
             arrows: false,
             //centerMode: true,
             //centerPadding: '40px',
             slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             }
     },
     {
-        breakpoint: 600,
+        breakpoint: 640,
             settings: {
             arrows: false,
             //centerMode: true,
             //centerPadding: '40px',
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             }
     },
     {
-        breakpoint: 480,
+        breakpoint: 320,
             settings: {
             arrows: false,
             //centerMode: true,

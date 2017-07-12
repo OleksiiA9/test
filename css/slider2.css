@@ -39,7 +39,6 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}artic
 .sl__text2{
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: ;
     color: #4e525d;
     /*background: #000;*/
     text-align: center;
@@ -126,7 +125,7 @@ img{
 }
 
 /*Адаптивность*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1920px){
   .mid{
     margin: 0 40px;
   }
@@ -138,7 +137,7 @@ img{
   }
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1440px){
   .col25{
     width: 50%;
   }
@@ -147,7 +146,7 @@ img{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
   .mid{
     margin: 0 20px;
   }
@@ -157,6 +156,39 @@ img{
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1024px){
 
+}
+
+@media screen and (max-width: 640px){
+    .sl__slide2{
+        width: 270px;
+        height: auto;
+        margin: 0;
+    }
+    .sl__slide2 .slll{
+        width: 151px;
+        height: 151px;
+    }
+    .sl__slide2 .slll:hover{;
+        width: 151px;
+        height: 151px;
+        background: url(../images/crossS1.png);
+    }
+    .sl__text2{
+        padding: 0;
+    }
+    .sl__zag2, .sl__desc2{
+        margin: 0;
+        padding: 0 10px;
+    }
+    .sl__zag2{
+        margin-top: 10px;
+    }
+    .sl__zag2 p{
+        margin-top: 0;
+    }
+    .sl__desc2{
+        margin-top: 4px;
+    }
 }

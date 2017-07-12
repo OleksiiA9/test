@@ -184,6 +184,22 @@ h6 {font: 16px sans-serif;}
                 }
             }
         }
+        /*hamburger*/
+        .menu{
+            float: right;
+            display: none;
+            width: 50px;
+            height: 50px;
+            background: blue;
+        }
+         .menu a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .content{
+            margin-top: 0 140px;
+        }
     }
     .content{
         position: absolute;
@@ -266,7 +282,7 @@ h6 {font: 16px sans-serif;}
             } 
         }
         .contact{
-            background: url(../images/bott_banner.png);
+            background: url(../images/bannerb6.png);
             padding: 100px 0 70px 0;
             text-align: center;
             h2{
@@ -367,4 +383,273 @@ h6 {font: 16px sans-serif;}
             }
         }
     }
+}
+/***************************************************/
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    body{background: red;}
+    .basic ul {width: 
+    100%;}
+    .basic ul li{width: 
+    30%;}
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    body{background: orange;}
+    .basic ul {width: 
+    100%;}
+    .basic ul li{width: 
+    30%;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    body{background: green;}
+    .basic ul {width: 
+    100%;}
+    .basic ul li{width: 
+    30%;}
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    body{background: blue;}
+    .basic ul {width: 
+    100%;}
+    .basic ul li{width: 
+    30%;}
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+        $g1: #484c55; /*ссылки Header*/
+        $g2: #f8f9fb; /*li:hover(header)*/
+        /*service*/
+        @mixin account{
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            li{
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                span{
+                    border-radius: 3px;
+                    padding: 4px 16px;
+                    cursor: pointer;
+                }
+            }
+            li:first-child{
+                height: 34px;
+                line-height: 34px;
+            }
+            li:nth-child(2){
+                height: 20px;
+                line-height: 20px;
+            }
+            li:last-child{
+                height: 34px;
+                line-height: 34px;
+                font-size: 17px;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    @mixin li_a {
+	        padding: 0 20px;
+            cursor: pointer;
+            height: 20px;
+            line-height: 20px;
+        }
+    
+    @mixin bott_form{ 
+                padding: 6px 10px;
+            }
+    
+.wrapper{
+    .wrapp2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header{
+        height: 50px;
+        .logo{
+            top: 6px;
+        }
+        .top_nav{
+            float: none;
+            display: none;
+            ul li{
+                display: block;
+            }
+        }
+        /*hamburger*/
+        .menu { 
+            display: block;
+            width: 42px;
+            height: 21px;
+            position: absolute;
+            top: 16px;
+            right: 10%;
+            background: none;
+            cursor: pointer;
+            z-index: 10000;
+        }
+        .menu .hamburger{
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: #475a85;
+            margin-bottom: 4px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px; 
+            cursor:pointer; 
+        }
+        .menu .hamburger:last-child{
+            margin-bottom: 0;
+        }
+        .top_nav {
+            position: absolute;
+            display: none;
+            float: none;
+            top: 50px;
+            width: 100%;
+            padding: 0;
+            ul{
+                display: block;
+                .c1{
+                    @include li_a;
+                    .c2{
+                        font-family: $OpenSans;
+                        font-size: 15px;
+                        font-weight: 'regular';
+                        color: $g1;
+                        line-height: 20px;
+                    }
+                }
+                .c1:hover{
+                    background: $g2;
+                    @include li_a;
+                    height: 17px;
+                    border-bottom: 3px solid $b1;
+                    .c2{color: $b1;}
+                }
+            }
+        } 
+        .top_nav.active{ 
+            display: block;
+            width: 50%;
+            text-align: left;
+            background: #ebedec;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            z-index: 1000;
+            cursor: pointer;
+            padding: 0;
+            margin-top: 0;
+        } 
+    }
+    .content{
+        top: 50px;
+        .team{
+            padding: 10px 0 20px 0;
+            h2{
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+        .service{
+            padding: 10px 0 10px 0;
+            .wrapp2{
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .basic{
+                @include account;
+                li span{
+                    background: $g3;
+                }
+                li:first-child{
+                    background: $g3;
+                }
+            }
+            .pro{
+                @include account;
+                li span{
+                    background: $b1;
+                }
+                li:first-child{
+                    background: $b1;
+                }
+            }
+            .premium{
+                @include account;
+                li span{
+                    background: $g3;
+                }
+                li:first-child{
+                    background: $g3;
+                }
+            }
+        }
+        .contact{
+            padding: 10px 0 140px 0;
+            position: relative;
+            h2{
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            .bott_cont{
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                .left{
+                    width: 100%;
+                    padding-right: 0;
+                    text-align: justify;
+                    h3{
+                        font-size: 20px;
+                    }
+                    .social_networks{
+                        ul{display: flex;
+                            justify-content: space-around;
+                            padding: 10px 0 20px 0;
+                        }
+                    }
+                    .info{
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: 10px;
+                        h5{
+                            margin-bottom: 6px;
+                        }
+                    }
+                }
+                .right{
+                    width: 100%;
+                    padding-left: 0;
+                    form{
+                        .nE{
+                            display: block;
+                            input{
+                                width: 100%;
+                                height: auto;
+                                @include bott_form;
+                                display: block;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        textarea{
+                            display: block;
+                            width: 100%;
+                            @include bott_form;
+                            margin: 10px 0;
+                            height: 126px;
+                        }
+                        .top_sub{
+                            width: 30%;
+                            padding: 4px 0 7px 0;
+                            font-size: 20px;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
 }
