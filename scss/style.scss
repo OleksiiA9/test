@@ -71,10 +71,11 @@ h6 {font: 16px sans-serif;}
         }
     /*service*/
         @mixin account{
-            display: block;
+            overflow: hidden;
+            display: inline-block;
             ul{border: 1px solid #ecf0f1;}
             li{
-                width: 368px;
+                width: 330px;
                 height: 45px;
                 border-bottom: 1px solid #ecf0f1;
                 background: #fff;
@@ -129,11 +130,15 @@ h6 {font: 16px sans-serif;}
     display: block;
     width: 100%;
     background: #fff;
+    .wrapp2{
+        width: 80%;
+        margin: 0 auto;
+    }
     .header{
         position: fixed;
-        width: 90%;
+        width: 100%;
         height: 100px;
-        padding: 0 5%;
+        padding: 0;
         z-index: 2000;
         background: #fff;
         .logo{
@@ -196,8 +201,8 @@ h6 {font: 16px sans-serif;}
             }
         }
         .service{
-            display: flex;
-            justify-content: space-around;
+            .wrapp2{display: flex;
+            justify-content: space-between;}
             text-align: center;
             background: #f1f1f1;
             padding: 120px 0 100px 0;
@@ -272,10 +277,10 @@ h6 {font: 16px sans-serif;}
                 margin-bottom: 120px;
             }
             .bott_cont{
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 .left{
                     width: 45%;
                     padding-right: 4%;
