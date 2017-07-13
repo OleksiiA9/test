@@ -428,6 +428,128 @@ h6 {
             font-weight: 400;
             cursor: pointer; }
 
+/*************************************************************/
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  /*************************************************************/
+  .wrapper .header {
+    height: 80px; }
+    .wrapper .header .logo {
+      top: 24px; }
+    .wrapper .header .top_nav ul .c1 {
+      padding: 0 30px;
+      cursor: pointer;
+      height: 100px; }
+      .wrapper .header .top_nav ul .c1 .c2 {
+        line-height: 80px; }
+    .wrapper .header .top_nav ul .c1:hover {
+      height: 77px; }
+  .wrapper .content {
+    top: 80px; }
+    .wrapper .content .team {
+      padding: 40px 0 50px 0; }
+      .wrapper .content .team h2 {
+        margin-bottom: 20px; }
+    .wrapper .content .service {
+      padding: 30px 0 40px 0; }
+      .wrapper .content .service .wrapp2 {
+        display: flex;
+        justify-content: space-between; }
+      .wrapper .content .service .basic {
+        width: 30%; }
+        .wrapper .content .service .basic li {
+          width: 100%;
+          height: 35px;
+          line-height: 35px; }
+          .wrapper .content .service .basic li span {
+            padding: 8px 24px; }
+        .wrapper .content .service .basic li:first-child {
+          height: 55px;
+          line-height: 55px; }
+        .wrapper .content .service .basic li:nth-child(2) {
+          height: 48px;
+          line-height: 48px; }
+        .wrapper .content .service .basic li:last-child {
+          height: 78px;
+          line-height: 78px; }
+      .wrapper .content .service .pro {
+        width: 30%; }
+        .wrapper .content .service .pro li {
+          width: 100%;
+          height: 35px;
+          line-height: 35px; }
+          .wrapper .content .service .pro li span {
+            padding: 8px 24px; }
+        .wrapper .content .service .pro li:first-child {
+          height: 55px;
+          line-height: 55px; }
+        .wrapper .content .service .pro li:nth-child(2) {
+          height: 48px;
+          line-height: 48px; }
+        .wrapper .content .service .pro li:last-child {
+          height: 78px;
+          line-height: 78px; }
+      .wrapper .content .service .premium {
+        width: 30%; }
+        .wrapper .content .service .premium li {
+          width: 100%;
+          height: 35px;
+          line-height: 35px; }
+          .wrapper .content .service .premium li span {
+            padding: 8px 24px; }
+        .wrapper .content .service .premium li:first-child {
+          height: 55px;
+          line-height: 55px; }
+        .wrapper .content .service .premium li:nth-child(2) {
+          height: 48px;
+          line-height: 48px; }
+        .wrapper .content .service .premium li:last-child {
+          height: 78px;
+          line-height: 78px; }
+    .wrapper .content .contact {
+      padding: 40px 0; }
+      .wrapper .content .contact h2 {
+        margin-bottom: 40px; }
+      .wrapper .content .contact .bott_cont .left {
+        width: 45%;
+        padding-right: 0; }
+        .wrapper .content .contact .bott_cont .left .social_networks ul {
+          display: block;
+          padding: 20px 0; }
+        .wrapper .content .contact .bott_cont .left .info h5 {
+          margin-bottom: 8px; }
+      .wrapper .content .contact .bott_cont .right {
+        width: 45%;
+        padding-left: 0; }
+        .wrapper .content .contact .bott_cont .right form .nE {
+          display: flex;
+          justify-content: space-between; }
+          .wrapper .content .contact .bott_cont .right form .nE input {
+            width: 46%;
+            height: auto;
+            padding: 8px;
+            color: #c1c1c1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 3px;
+            border: none; }
+        .wrapper .content .contact .bott_cont .right form textarea {
+          display: block;
+          width: 100%;
+          padding: 8px;
+          color: #c1c1c1;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          border-radius: 3px;
+          border: none;
+          margin: 18px 0 8px 0;
+          height: 146px; }
+        .wrapper .content .contact .bott_cont .right form .top_sub {
+          width: 30%;
+          padding: 8px 0;
+          cursor: pointer;
+          font-size: 20px; } }
 /***********************************************************/
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   /***********************************************************/
@@ -435,7 +557,7 @@ h6 {
     height: 80px; }
     .wrapper .header .logo {
       width: 120px;
-      top: 4px;
+      top: 24px;
       left: 5%; }
     .wrapper .header .top_nav ul .c1 {
       padding: 0 15px;

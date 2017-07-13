@@ -384,6 +384,141 @@ h6 {font: 16px sans-serif;}
         }
     }
 }
+/*************************************************************/
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    @mixin account{
+        li{
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            span{
+                padding: 8px 24px;
+            }
+        }
+        li:first-child{
+            height: 55px;
+            line-height: 55px;
+        }
+        li:nth-child(2){
+            height: 48px;
+            line-height: 48px;
+        }
+        li:last-child{
+            height: 78px;
+            line-height: 78px;
+        }
+    }
+    @mixin bott_form{ 
+                padding: 8px;
+                color: #c1c1c1;
+                font-family: $OpenSans;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 3px;
+                border: none;
+            }
+/*************************************************************/    
+    .wrapper{
+        .wrapp2{
+        }
+        .header{
+            height: 80px;
+            .logo{
+                top: 24px;
+            }
+            .top_nav{
+                ul{
+                    .c1{
+                        @include li_a;
+                        .c2{
+                            line-height: 80px;
+                        }
+                    }
+                    .c1:hover{
+                        height: 77px;
+                    }
+                }
+            }
+        }
+        .content{
+            top: 80px;
+            .team{
+                padding: 40px 0 50px 0;
+                h2{
+                    margin-bottom: 20px;
+                }
+            }
+            .service{
+                .wrapp2{display: flex;
+                justify-content: space-between;}
+                padding: 30px 0 40px 0;
+                .basic{
+                    @include account;
+                    width: 30%;
+                }
+                .pro{
+                    @include account;
+                    width: 30%;
+                }
+                .premium{
+                    @include account;
+                    width: 30%;
+                }
+            }
+            .contact{
+                padding: 40px 0;
+                h2{
+                    margin-bottom: 40px;
+                }
+                .bott_cont{
+                    .left{
+                        width: 45%;
+                        padding-right: 0;
+                        .social_networks{
+                            ul{
+                                display: block;
+                                padding: 20px 0;
+                            }
+                        }
+                        .info{
+                            h5{
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                    .right{
+                        width: 45%;
+                        padding-left: 0;
+                        form{
+                            .nE{
+                                display: flex;
+                                justify-content: space-between;
+                                input{
+                                    width: 46%;
+                                    height: auto;
+                                    @include bott_form;
+                                }
+                            }
+                            textarea{
+                                display: block;
+                                width: 100%;
+                                @include bott_form;
+                                margin: 18px 0 8px 0;
+                                height: 146px;
+                            }
+                            .top_sub{
+                                width: 30%;
+                                padding: 8px 0;
+                                cursor: pointer;
+                                font-size: 20px;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
 /***********************************************************/
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     @mixin li_a {
@@ -425,7 +560,7 @@ h6 {font: 16px sans-serif;}
             height: 80px;
             .logo{
                 width: 120px;
-                top: 4px;
+                top: 24px;
                 left: 5%;
             }
             .top_nav{
