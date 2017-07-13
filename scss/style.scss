@@ -406,13 +406,266 @@ h6 {font: 16px sans-serif;}
     .basic ul li{width: 
     30%;}
 }
+/***********************************************************/
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-    body{background: blue;}
-    .basic ul {width: 
-    100%;}
-    .basic ul li{width: 
-    30%;}
+    /*Миксины*/
+    /*header*/
+        @mixin li_a {
+	        padding: 0 10px;
+            cursor: pointer;
+            height: 50px;
+        }
+    /*service*/
+        @mixin account{
+            overflow: hidden;
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            ul{border: 1px solid #ecf0f1;}
+            li{
+                width: 100%;
+                height: 30px;
+                border-bottom: 1px solid #ecf0f1;
+                background: #fff;
+                font-family: $OpenSans;
+                font-size: 18px;
+                font-weight: 400;
+                color: #8c9299;
+                line-height: 30px;
+                span{
+                    border-radius: 3px;
+                    padding: 12px 49px;
+                    cursor: pointer;
+                }
+            }
+            li:first-child{
+                height: 60px;
+                border-bottom: none;
+                line-height: 60px;
+                font-size: 26px;
+                color: #fff;
+            }
+            li:nth-child(2){
+                height: 50px;
+                background: #f8f9fb;
+                line-height: 50px;
+                font-size: 20px;
+                color: #485460;
+            }
+            li:last-child{
+                height: 80px;
+                border-bottom: none;
+                background: #f8f9fb;
+                line-height: 80px;
+                font-size: 17px;
+                color: #fff;
+                font-weight: 900;
+            }
+        }
+    /*bott_form*/
+            @mixin bott_form{ 
+                padding: 16px 10px;
+                color: #c1c1c1;
+                font-family: $OpenSans;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 3px;
+                border: none;
+            }
+/***********************************************************/    
+    .wrapper{
+        position: relative;
+        display: block;
+        width: 100%;
+        background: #fff;
+        .wrapp2{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header{;
+            height: 50px;
+            .logo{
+                display: block;
+                width: 120px;
+                cursor: pointer;
+                overflow: hidden;
+                top: 4px;
+                left: 5%;
+                position: absolute;
+                a{
+                    width: 120px;
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+            .top_nav{
+                float: right;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                right: 5%;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    .c1{
+                        @include li_a;
+                        .c2{
+                            font-family: $OpenSans;
+                            font-size: 15px;
+                            font-weight: 'regular';
+                            color: $g1;
+                            line-height: 50px;
+                        }
+                    }
+                    .c1:hover{
+                        background: $g2;
+                        @include li_a;
+                        height: 47px;
+                        border-bottom: 3px solid $b1;
+                        .c2{color: $b1;}
+                    }
+                }
+            }
+        }
+        .content{
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            .team{
+                text-align: center;
+                padding: 50px 0 50px 0;
+                h2{
+                    color: #4e525d;
+                    font-family: $OpenSans;
+                    font-size: 42px;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                }
+            }
+            .service{
+                .wrapp2{display: block;
+                justify-content: none;}
+                text-align: center;
+                background: #f1f1f1;
+                padding: 60px 0 40px 0;
+                .basic{
+                    @include account;
+                }
+                .pro{
+                    @include account;
+                }
+                .premium{
+                    @include account;
+                }
+            }
+            .contact{
+                background: url(../images/bannerb6.png);
+                padding: 40px 0 70px 0;
+                text-align: center;
+                h2{
+                    font-family: $OpenSans;
+                    font-size: 42px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin-bottom: 60px;
+                }
+                .bott_cont{
+                    width: 100%;
+                    margin: 0 auto;
+                    display: block;
+                    justify-content: none;
+                    .left{
+                        display: block;
+                        width: 100%;
+                        padding-right: 0;
+                        text-align: center;
+                        h3{
+                            font-family: $OpenSans;
+                            font-size: 24px;
+                            font-weight: 400;
+                            color: #fff;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font-family: $OpenSans;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #adadad;
+                        }
+                        .social_networks{
+                            ul{display: block;
+                                padding: 40px 0 20px 0;
+                                li{
+                                    display: inline-block;
+                                    overflow: hidden;
+                                    margin-right: 16px;
+                                    opacity: 0.7;
+                                    width: 42px;
+                                    height: 42px;
+                                    border-radius: 50%;
+                                }
+                                li:hover{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .info{
+                            h5{
+                                color: #bface2;
+                                font-family: $OpenSans;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 12px;
+                                a{
+                                   color: #bface2; 
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        display: block;
+                        width: 100%;
+                        padding-left: 0;
+                        form{
+                            .nE{
+                                display: flex;
+                                justify-content: space-between;
+                                input{
+                                    width: 46%;
+                                    height: auto;
+                                    @include bott_form;
+                                }
+                            }
+                            textarea{
+                                display: block;
+                                width: 100%;
+                                @include bott_form;
+                                margin: 30px 0;
+                                height: 176px;
+                            }
+                            .top_sub{
+                                float: right;
+                                width: 170px;
+                                background: $b1;
+                                border: none;
+                                border-radius: 3px;
+                                padding: 8px 0 14px 0;
+                                text-align: center;
+                                color: #fff;
+                                font-family: $OpenSans;
+                                font-size: 22px;
+                                font-weight: 400;
+                                cursor: pointer;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
 }
+/***********************************************************/
 @media screen and (min-width: 320px) and (max-width: 639px) {
         $g1: #484c55; /*ссылки Header*/
         $g2: #f8f9fb; /*li:hover(header)*/
@@ -457,199 +710,198 @@ h6 {font: 16px sans-serif;}
     @mixin bott_form{ 
                 padding: 6px 10px;
             }
-    
-.wrapper{
-    .wrapp2{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .header{
-        height: 50px;
-        .logo{
-            top: 6px;
+    .wrapper{
+        .wrapp2{
+            width: 80%;
+            margin: 0 auto;
         }
-        .top_nav{
-            float: none;
-            display: none;
-            ul li{
-                display: block;
+        .header{
+            height: 50px;
+            .logo{
+                top: 6px;
             }
-        }
-        /*hamburger*/
-        .menu { 
-            display: block;
-            width: 42px;
-            height: 21px;
-            position: absolute;
-            top: 16px;
-            right: 10%;
-            background: none;
-            cursor: pointer;
-            z-index: 10000;
-        }
-        .menu .hamburger{
-            display: block;
-            width: 40px;
-            height: 4px;
-            background: #475a85;
-            margin-bottom: 4px;
-            -webkit-border-radius: 2px;
-            border-radius: 2px; 
-            cursor:pointer; 
-        }
-        .menu .hamburger:last-child{
-            margin-bottom: 0;
-        }
-        .top_nav {
-            position: absolute;
-            display: none;
-            float: none;
-            top: 50px;
-            width: 100%;
-            padding: 0;
-            ul{
-                display: block;
-                .c1{
-                    @include li_a;
-                    .c2{
-                        font-family: $OpenSans;
-                        font-size: 15px;
-                        font-weight: 'regular';
-                        color: $g1;
-                        line-height: 20px;
-                    }
-                }
-                .c1:hover{
-                    background: $g2;
-                    @include li_a;
-                    height: 17px;
-                    border-bottom: 3px solid $b1;
-                    .c2{color: $b1;}
+            .top_nav{
+                float: none;
+                display: none;
+                ul li{
+                    display: block;
                 }
             }
-        } 
-        .top_nav.active{ 
-            display: block;
-            width: 50%;
-            text-align: left;
-            background: #ebedec;
-            position: absolute;
-            top: 50px;
-            right: 0;
-            z-index: 1000;
-            cursor: pointer;
-            padding: 0;
-            margin-top: 0;
-        } 
-    }
-    .content{
-        top: 50px;
-        .team{
-            padding: 10px 0 20px 0;
-            h2{
-                font-size: 22px;
-                font-weight: 600;
+            /*hamburger*/
+            .menu { 
+                display: block;
+                width: 42px;
+                height: 21px;
+                position: absolute;
+                top: 16px;
+                right: 10%;
+                background: none;
+                cursor: pointer;
+                z-index: 10000;
+            }
+            .menu .hamburger{
+                display: block;
+                width: 40px;
+                height: 4px;
+                background: #475a85;
+                margin-bottom: 4px;
+                -webkit-border-radius: 2px;
+                border-radius: 2px; 
+                cursor:pointer; 
+            }
+            .menu .hamburger:last-child{
                 margin-bottom: 0;
             }
-        }
-        .service{
-            padding: 10px 0 10px 0;
-            .wrapp2{
-                display: block;
-                width: 80%;
-                margin: 0 auto;
-            }
-            .basic{
-                @include account;
-                li span{
-                    background: $g3;
-                }
-                li:first-child{
-                    background: $g3;
-                }
-            }
-            .pro{
-                @include account;
-                li span{
-                    background: $b1;
-                }
-                li:first-child{
-                    background: $b1;
-                }
-            }
-            .premium{
-                @include account;
-                li span{
-                    background: $g3;
-                }
-                li:first-child{
-                    background: $g3;
-                }
-            }
-        }
-        .contact{
-            padding: 10px 0 140px 0;
-            position: relative;
-            h2{
-                font-size: 22px;
-                margin-bottom: 20px;
-            }
-            .bott_cont{
+            .top_nav {
+                position: absolute;
+                display: none;
+                float: none;
+                top: 50px;
                 width: 100%;
-                margin: 0 auto;
-                display: block;
-                .left{
-                    width: 100%;
-                    padding-right: 0;
-                    text-align: justify;
-                    h3{
-                        font-size: 20px;
-                    }
-                    .social_networks{
-                        ul{display: flex;
-                            justify-content: space-around;
-                            padding: 10px 0 20px 0;
+                padding: 0;
+                ul{
+                    display: block;
+                    .c1{
+                        @include li_a;
+                        .c2{
+                            font-family: $OpenSans;
+                            font-size: 15px;
+                            font-weight: 'regular';
+                            color: $g1;
+                            line-height: 20px;
                         }
                     }
-                    .info{
-                        position: absolute;
-                        bottom: 0;
-                        margin-bottom: 10px;
-                        h5{
-                            margin-bottom: 6px;
-                        }
+                    .c1:hover{
+                        background: $g2;
+                        @include li_a;
+                        height: 17px;
+                        border-bottom: 3px solid $b1;
+                        .c2{color: $b1;}
                     }
                 }
-                .right{
+            } 
+            .top_nav.active{ 
+                display: block;
+                width: 50%;
+                text-align: left;
+                background: #ebedec;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                z-index: 1000;
+                cursor: pointer;
+                padding: 0;
+                margin-top: 0;
+            } 
+        }
+        .content{
+            top: 50px;
+            .team{
+                padding: 10px 0 20px 0;
+                h2{
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+            .service{
+                padding: 10px 0 10px 0;
+                .wrapp2{
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .basic{
+                    @include account;
+                    li span{
+                        background: $g3;
+                    }
+                    li:first-child{
+                        background: $g3;
+                    }
+                }
+                .pro{
+                    @include account;
+                    li span{
+                        background: $b1;
+                    }
+                    li:first-child{
+                        background: $b1;
+                    }
+                }
+                .premium{
+                    @include account;
+                    li span{
+                        background: $g3;
+                    }
+                    li:first-child{
+                        background: $g3;
+                    }
+                }
+            }
+            .contact{
+                padding: 10px 0 140px 0;
+                position: relative;
+                h2{
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                .bott_cont{
                     width: 100%;
-                    padding-left: 0;
-                    form{
-                        .nE{
-                            display: block;
-                            input{
-                                width: 100%;
-                                height: auto;
-                                @include bott_form;
-                                display: block;
-                                margin-bottom: 10px;
-                            }
-                        }
-                        textarea{
-                            display: block;
-                            width: 100%;
-                            @include bott_form;
-                            margin: 10px 0;
-                            height: 126px;
-                        }
-                        .top_sub{
-                            width: 30%;
-                            padding: 4px 0 7px 0;
+                    margin: 0 auto;
+                    display: block;
+                    .left{
+                        width: 100%;
+                        padding-right: 0;
+                        text-align: justify;
+                        h3{
                             font-size: 20px;
                         }
-                    } 
+                        .social_networks{
+                            ul{display: flex;
+                                justify-content: space-around;
+                                padding: 10px 0 20px 0;
+                            }
+                        }
+                        .info{
+                            position: absolute;
+                            bottom: 0;
+                            margin-bottom: 10px;
+                            h5{
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                    .right{
+                        width: 100%;
+                        padding-left: 0;
+                        form{
+                            .nE{
+                                display: block;
+                                input{
+                                    width: 100%;
+                                    height: auto;
+                                    @include bott_form;
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            textarea{
+                                display: block;
+                                width: 100%;
+                                @include bott_form;
+                                margin: 10px 0;
+                                height: 126px;
+                            }
+                            .top_sub{
+                                width: 30%;
+                                padding: 4px 0 7px 0;
+                                font-size: 20px;
+                            }
+                        } 
+                    }
                 }
             }
         }
     }
-}
 }

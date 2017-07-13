@@ -98,13 +98,80 @@ img{
 }
 
 /*Адаптивность*/
-@media screen and (min-width: 320px) and (max-width: 639px) {
-    .sl__slide{
-    position: relative;
-}
-.sl__text{
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .sl__text{
     position: absolute;
     top: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0;
+}
+.sl__zag{
+    font-size: 46px;
+    font-weight: 400;
+    opacity: 1;
+} 
+.sl__desc{
+    display: block;
+    margin:0 auto 100px auto;
+}
+.sl__but{
+    font-size: 18px;
+    font-weight: 400;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    .sl__text{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0;
+}
+.sl__zag{
+    font-size: 36px;
+    font-weight: 400;
+    opacity: 1;
+} 
+.sl__desc{
+    display: block;
+}
+.sl__but{
+    font-size: 18px;
+    font-weight: 400;
+    border: 3px solid #fff;
+    padding: 10px 20px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 799px) {
+    .sl__text{
+    top: 0;
+    padding: 0;
+}
+.sl__zag{
+    font-size: 30px;
+    margin-bottom: 30px;
+} 
+.sl__desc{
+    font-size: 20px;
+    margin:0 auto 60px auto;
+}
+.sl__but{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+.sl__text{
+    position: absolute;
+    top: 25%;
     width: 100%;
     color: #ffffff;
     text-align: center;

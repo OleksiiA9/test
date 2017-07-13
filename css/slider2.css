@@ -4,7 +4,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}artic
 
 /*Стили для слайдера */
 .sl__slide2{
-    width: 270px;
+    width: 100%;
     height: auto;
     margin: 20px;
 
@@ -144,22 +144,84 @@ img{
   .col25:nth-child(even){
     margin: 0;
   }
-}
-
-@media screen and (max-width: 1200px){
-  .mid{
-    margin: 0 20px;
-  }
-  .col25, .col33, .col50{
-    width: 100%;
-    margin: 0;
-  }
+    .sl__slide2 .slll{
+        width: 181px;
+        height: 181px;
+    }
+    .sl__slide2 .slll:hover{;
+        width: 181px;
+        height: 181px;
+        background: url(../images/crossS800.png);
+    }
 }
 
 @media screen and (max-width: 1024px){
-
+    .sl__slide2 .slll{
+        width: 181px;
+        height: 181px;
+    }
+    .sl__slide2 .slll:hover{;
+        width: 181px;
+        height: 181px;
+        background: url(../images/crossS800.png);
+    }
+    .sl__text2{
+        padding: 10px 0;
+    }
+    .sl__zag2, .sl__desc2{
+        margin: 0 0 60px 0;
+        padding: 0 10px;
+    }
+    .sl__zag2{
+        font-size: 22px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .sl__zag2 p{
+        font-size: 14px;
+        font-weight: 400px;
+        margin-top: 12px;
+    }
+    .sl__desc2{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0;
+    }
 }
 
+@media screen and (max-width: 800px){
+  .sl__slide2 .slll{
+        width: 151px;
+        height: 151px;
+    }
+    .sl__slide2 .slll:hover{;
+        width: 151px;
+        height: 151px;
+        background: url(../images/crossS640.png);
+    } 
+    .sl__text2{
+        padding: 10px 0;
+    }
+    .sl__zag2, .sl__desc2{
+        margin: 0 0 20px 0;
+        padding: 0 10px;
+    }
+    .sl__zag2{
+        font-size: 22px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .sl__zag2 p{
+        font-size: 14px;
+        font-weight: 400px;
+        margin-top: 12px;
+    }
+    .sl__desc2{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+}
 @media screen and (max-width: 640px){
     .sl__slide2{
         width: 270px;
@@ -173,7 +235,7 @@ img{
     .sl__slide2 .slll:hover{;
         width: 151px;
         height: 151px;
-        background: url(../images/crossS1.png);
+        background: url(../images/crossS640.png);
     }
     .sl__text2{
         padding: 0;
@@ -190,5 +252,16 @@ img{
     }
     .sl__desc2{
         margin-top: 4px;
+    }
+}
+@media screen and (max-width: 401px){
+    .sl__slide2 .slll{
+        width: 151px;
+        height: 151px;
+    }
+    .sl__slide2 .slll:hover{;
+        width: 151px;
+        height: 151px;
+        background: url(../images/crossS640.png);
     }
 }
