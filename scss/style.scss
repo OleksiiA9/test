@@ -384,30 +384,147 @@ h6 {font: 16px sans-serif;}
         }
     }
 }
-/***************************************************/
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-    body{background: red;}
-    .basic ul {width: 
-    100%;}
-    .basic ul li{width: 
-    30%;}
-}
-@media screen and (min-width: 1200px) and (max-width: 1439px) {
-    body{background: orange;}
-    .basic ul {width: 
-    100%;}
-    .basic ul li{width: 
-    30%;}
-}
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-    body{background: green;}
-    .basic ul {width: 
-    100%;}
-    .basic ul li{width: 
-    30%;}
+/***********************************************************/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    @mixin li_a {
+	        padding: 0 15px;
+            cursor: pointer;
+            height: 80px;
+        }
+    @mixin account{
+        border-radius: 6px;
+        overflow: hidden;
+        display: inline-block;
+        margin-bottom: 20px;
+        ul{border: 1px solid #ecf0f1;}
+        li{
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+        }
+        li:first-child{
+            height: 55px;
+            line-height: 55px;
+        }
+        li:nth-child(2){
+            height: 45px;
+            line-height: 45px;
+        }
+        li:last-child{
+            height: 68px;
+            line-height: 68px;
+        }
+    }
+    @mixin bott_form{ 
+        padding: 5px;
+        font-size: 12px;
+    }
+/***********************************************************/
+    .wrapper{
+        .header{;
+            height: 80px;
+            .logo{
+                width: 120px;
+                top: 4px;
+                left: 5%;
+            }
+            .top_nav{
+                ul{
+                    .c1{
+                        @include li_a;
+                        .c2{
+                            line-height: 80px;
+                        }
+                    }
+                    .c1:hover{
+                        @include li_a;
+                        height: 77px;
+                    }
+                }
+            }
+        }
+        .content{
+            top: 80px;
+            .team{
+                padding: 40px 0 20px 0;
+                h2{
+                    color: #4e525d;
+                    font-family: $OpenSans;
+                    font-size: 42px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+            }
+            .service{
+                .wrapp2{
+                    display: flex;
+                    justify-content: space-between;}
+                    padding: 40px 0 60px 0;
+                    .basic{
+                        width: 30%;
+                        @include account;
+                    }
+                    .pro{
+                        width: 30%;
+                        @include account;
+                    }
+                    .premium{
+                        width: 30%;
+                        @include account;
+                    }
+            }
+            .contact{
+                padding: 30px 0 40px 0;
+                h2{
+                    font-size: 36px;
+                    margin-bottom: 40px;
+                }
+                .bott_cont{
+                    .left{
+                        width: 35%;
+                        padding-right: 0;
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                        .social_networks{
+                            ul{display: block;
+                                padding: 0;
+                            }
+                        }  
+                    }
+                    .right{
+                        width: 55%;
+                        padding-left: 0;
+                        form{
+                            .nE{
+                                input{
+                                    @include bott_form;
+                                }
+                            }
+                            textarea{
+                                display: block;
+                                width: 100%;
+                                @include bott_form;
+                                margin: 10px 0;
+                                height: 126px;
+                            }
+                            .top_sub{
+                                width: 30%;
+                                padding: 2px 0 7px 0;
+                                font-size: 14px;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
 }
 /***********************************************************/
-@media screen and (min-width: 640px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 799px) {
     /*Миксины*/
     /*header*/
         @mixin li_a {
@@ -544,16 +661,17 @@ h6 {font: 16px sans-serif;}
                 }
             }
             .service{
-                .wrapp2{display: block;
-                justify-content: none;}
+                .wrapp2{display: block;}
                 text-align: center;
                 background: #f1f1f1;
                 padding: 60px 0 40px 0;
                 .basic{
                     @include account;
+                    margin-bottom: 20px;
                 }
                 .pro{
                     @include account;
+                    margin-bottom: 20px;
                 }
                 .premium{
                     @include account;
@@ -666,6 +784,8 @@ h6 {font: 16px sans-serif;}
     }
 }
 /***********************************************************/
+
+/***********************************************************/
 @media screen and (min-width: 320px) and (max-width: 639px) {
         $g1: #484c55; /*ссылки Header*/
         $g2: #f8f9fb; /*li:hover(header)*/
@@ -676,8 +796,8 @@ h6 {font: 16px sans-serif;}
             border-radius: 6px;
             li{
                 width: 100%;
-                height: 20px;
-                line-height: 20px;
+                height: 30px;
+                line-height: 30px;
                 span{
                     border-radius: 3px;
                     padding: 4px 16px;
@@ -685,16 +805,16 @@ h6 {font: 16px sans-serif;}
                 }
             }
             li:first-child{
-                height: 34px;
-                line-height: 34px;
+                height: 40px;
+                line-height: 40px;
             }
             li:nth-child(2){
-                height: 20px;
-                line-height: 20px;
+                height: 30px;
+                line-height: 30px;
             }
             li:last-child{
-                height: 34px;
-                line-height: 34px;
+                height: 40px;
+                line-height: 40px;
                 font-size: 17px;
                 color: #fff;
                 font-weight: 600;
