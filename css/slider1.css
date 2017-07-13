@@ -24,7 +24,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}artic
     font-family: 'Open Sans', sans-serif;
     font-size: 23px;
     font-weight: 400;
-    margin:0 auto 57px auto;
+    margin:0 auto 10% auto;
     width: 400px;
 }
 .sl__but{
@@ -101,7 +101,7 @@ img{
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
     .sl__text{
     position: absolute;
-    top: 0;
+    top: 20%;
     width: 100%;
     color: #ffffff;
     text-align: center;
