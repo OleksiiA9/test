@@ -164,16 +164,21 @@ h6 {font: 16px sans-serif;}
             top: 0;
             right: 10%;
             ul{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -ms-flex-pack: distribute;
                 justify-content: space-around;
                 .c1{
                     @include li_a;
+                    width: 100%;
                     .c2{
                         font-family: $OpenSans;
                         font-size: 15px;
                         font-weight: 'regular';
                         color: $g1;
                         line-height: 100px;
+                        width: 100%;
                     }
                 }
                 .c1:hover{
@@ -218,7 +223,9 @@ h6 {font: 16px sans-serif;}
             }
         }
         .service{
-            .wrapp2{display: flex;
+            .wrapp2{display: -webkit-box;display: -ms-flexbox;display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;}
             text-align: center;
             background: #f1f1f1;
@@ -296,7 +303,11 @@ h6 {font: 16px sans-serif;}
             .bott_cont{
                 width: 100%;
                 margin: 0 auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;
                 .left{
                     width: 45%;
@@ -350,7 +361,11 @@ h6 {font: 16px sans-serif;}
                     padding-left: 4%;
                     form{
                         .nE{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
                             justify-content: space-between;
                             input{
                                 width: 46%;
@@ -433,6 +448,8 @@ h6 {font: 16px sans-serif;}
                         @include li_a;
                         .c2{
                             line-height: 80px;
+                            width: 100%;
+                            height: 80px;
                         }
                     }
                     .c1:hover{
@@ -450,7 +467,9 @@ h6 {font: 16px sans-serif;}
                 }
             }
             .service{
-                .wrapp2{display: flex;
+                .wrapp2{display: -webkit-box;display: -ms-flexbox;display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;}
                 padding: 30px 0 40px 0;
                 .basic{
@@ -492,7 +511,11 @@ h6 {font: 16px sans-serif;}
                         padding-left: 0;
                         form{
                             .nE{
+                                display: -webkit-box;
+                                display: -ms-flexbox;
                                 display: flex;
+                                -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
                                 justify-content: space-between;
                                 input{
                                     width: 46%;
@@ -593,7 +616,11 @@ h6 {font: 16px sans-serif;}
             }
             .service{
                 .wrapp2{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
                     justify-content: space-between;}
                     padding: 40px 0 60px 0;
                     .basic{
@@ -759,7 +786,10 @@ h6 {font: 16px sans-serif;}
                 top: 0;
                 right: 5%;
                 ul{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -ms-flex-pack: distribute;
                     justify-content: space-around;
                     .c1{
                         @include li_a;
@@ -828,6 +858,8 @@ h6 {font: 16px sans-serif;}
                     width: 100%;
                     margin: 0 auto;
                     display: block;
+                    -webkit-box-pack: none;
+                    -ms-flex-pack: none;
                     justify-content: none;
                     .left{
                         display: block;
@@ -883,7 +915,11 @@ h6 {font: 16px sans-serif;}
                         padding-left: 0;
                         form{
                             .nE{
+                                display: -webkit-box;
+                                display: -ms-flexbox;
                                 display: flex;
+                                -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
                                 justify-content: space-between;
                                 input{
                                     width: 46%;
@@ -1001,7 +1037,6 @@ h6 {font: 16px sans-serif;}
                 height: 4px;
                 background: #475a85;
                 margin-bottom: 4px;
-                -webkit-border-radius: 2px;
                 border-radius: 2px; 
                 cursor:pointer; 
             }
@@ -1114,7 +1149,8 @@ h6 {font: 16px sans-serif;}
                             font-size: 20px;
                         }
                         .social_networks{
-                            ul{display: flex;
+                            ul{display: -webkit-box;display: -ms-flexbox;display: flex;
+                                -ms-flex-pack: distribute;
                                 justify-content: space-around;
                                 padding: 10px 0 20px 0;
                             }
