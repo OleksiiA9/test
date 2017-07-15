@@ -54,6 +54,13 @@ h4 {font: 21px sans-serif;}
 h5 {font: 18px sans-serif;}
 h6 {font: 16px sans-serif;}
 /**************************************************/
+
+@import "slick";
+@import "slick-theme";
+@import "slider1";
+@import "sllider2";
+@import "valid_form";
+
 /*Переменные*/
     /*цвета*/
         $g1: #484c55; /*ссылки Header*/
@@ -89,6 +96,10 @@ h6 {font: 16px sans-serif;}
                     border-radius: 3px;
                     padding: 12px 49px;
                     cursor: pointer;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                    user-select: none;
                 }
             }
             li:first-child{
@@ -97,6 +108,10 @@ h6 {font: 16px sans-serif;}
                 line-height: 75px;
                 font-size: 26px;
                 color: #fff;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
             }
             li:nth-child(2){
                 height: 68px;
