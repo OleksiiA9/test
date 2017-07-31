@@ -385,14 +385,14 @@ h6 {font: 16px sans-serif;}
                             -ms-flex-pack: justify;
                             justify-content: space-between;
                             input{
-                                width: 46%;
+                                width: 42%;
                                 height: auto;
                                 @include bott_form;
                             }
                         }
                         textarea{
                             display: block;
-                            width: 100%;
+                            width: 96%;
                             @include bott_form;
                             margin: 30px 0;
                             height: 176px;
@@ -542,17 +542,18 @@ h6 {font: 16px sans-serif;}
                                 -ms-flex-pack: justify;
                                 justify-content: space-between;
                                 input{
-                                    width: 46%;
+                                    width: 42%;
                                     height: auto;
                                     @include bott_form;
                                 }
                             }
                             textarea{
                                 display: block;
-                                width: 100%;
+                                width: 95%;
                                 @include bott_form;
                                 margin: 18px 0 8px 0;
                                 height: 146px;
+                                padding: 2.5%;
                             }
                             .top_sub{
                                 width: 30%;
@@ -692,10 +693,11 @@ h6 {font: 16px sans-serif;}
                             }
                             textarea{
                                 display: block;
-                                width: 100%;
+                                width: 95%;
                                 @include bott_form;
                                 margin: 10px 0;
                                 height: 126px;
+                                padding: 2.5%;
                             }
                             .top_sub{
                                 width: 30%;
@@ -940,14 +942,14 @@ h6 {font: 16px sans-serif;}
                                 -ms-flex-pack: justify;
                                 justify-content: space-between;
                                 input{
-                                    width: 46%;
+                                    width: 44%;
                                     height: auto;
                                     @include bott_form;
                                 }
                             }
                             textarea{
                                 display: block;
-                                width: 100%;
+                                
                                 @include bott_form;
                                 margin: 30px 0;
                                 height: 176px;

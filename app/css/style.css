@@ -1319,7 +1319,7 @@ img {
             -ms-flex-pack: justify;
             justify-content: space-between; }
             .wrapper .content .contact .bott_cont .right form .nE input {
-              width: 46%;
+              width: 42%;
               height: auto;
               padding: 16px 10px;
               color: #c1c1c1;
@@ -1330,7 +1330,7 @@ img {
               border: none; }
           .wrapper .content .contact .bott_cont .right form textarea {
             display: block;
-            width: 100%;
+            width: 96%;
             padding: 16px 10px;
             color: #c1c1c1;
             font-family: "Open Sans", sans-serif;
@@ -1463,7 +1463,7 @@ img {
           -ms-flex-pack: justify;
           justify-content: space-between; }
           .wrapper .content .contact .bott_cont .right form .nE input {
-            width: 46%;
+            width: 42%;
             height: auto;
             padding: 8px;
             color: #c1c1c1;
@@ -1474,7 +1474,7 @@ img {
             border: none; }
         .wrapper .content .contact .bott_cont .right form textarea {
           display: block;
-          width: 100%;
+          width: 95%;
           padding: 8px;
           color: #c1c1c1;
           font-family: "Open Sans", sans-serif;
@@ -1483,7 +1483,8 @@ img {
           border-radius: 3px;
           border: none;
           margin: 18px 0 8px 0;
-          height: 146px; }
+          height: 146px;
+          padding: 2.5%; }
         .wrapper .content .contact .bott_cont .right form .top_sub {
           width: 30%;
           padding: 8px 0;
@@ -1612,11 +1613,12 @@ img {
           font-size: 12px; }
         .wrapper .content .contact .bott_cont .right form textarea {
           display: block;
-          width: 100%;
+          width: 95%;
           padding: 5px;
           font-size: 12px;
           margin: 10px 0;
-          height: 126px; }
+          height: 126px;
+          padding: 2.5%; }
         .wrapper .content .contact .bott_cont .right form .top_sub {
           width: 30%;
           padding: 2px 0 7px 0;
@@ -1885,7 +1887,7 @@ img {
               -ms-flex-pack: justify;
               justify-content: space-between; }
               .wrapper .content .contact .bott_cont .right form .nE input {
-                width: 46%;
+                width: 44%;
                 height: auto;
                 padding: 16px 10px;
                 color: #c1c1c1;
@@ -1896,7 +1898,6 @@ img {
                 border: none; }
             .wrapper .content .contact .bott_cont .right form textarea {
               display: block;
-              width: 100%;
               padding: 16px 10px;
               color: #c1c1c1;
               font-family: "Open Sans", sans-serif;
